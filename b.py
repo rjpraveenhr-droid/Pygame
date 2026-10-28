@@ -28,7 +28,6 @@ def game_loop():
         display_surface.blit(text, text_rect)
         pygame.display.flip()
         clock.tick(30)
-
     pygame.quit()
     if __name__ == '__main__':
         game_loop()
