@@ -13,7 +13,7 @@ backround_image = pygame.transform.scale(pygame.image.load('backroung 3.jpg').co
 bunny_image = pygame.transform.scale(pygame.image.load('images (6).jpeg').convert_alpha(), (200, 200))
 bunny_rect = bunny_image.get_rect(center=(SWIDTH // 2, SHEIGHT // 2 + 110))
 text = pygame.font.Font(None, 36).render('Hello World', True,pygame.Color('black'))
-text_rect = text.get_rect(center=(SWIDTH// 2, SHEIGHT// 2 + 110))
+text_rect = text.get_rect(center=(SWIDTH // 2, SHEIGHT // 2 + 110))
 
 def game_loop():
     clock = pygame.time.Clock()
@@ -29,5 +29,6 @@ def game_loop():
         pygame.display.flip()
         clock.tick(30)
     pygame.quit()
-    if __name__ == '__main__':
-        game_loop()
+
+if __name__ == '__main__':
+    game_loop()
